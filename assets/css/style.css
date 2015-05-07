@@ -15,34 +15,9 @@
 	}
 
 /* Skel */
-	.tooltip{
-	    display: inline;
-	    position: relative;
-	}
-
-	.tooltip:hover:after{
-	    background: #333;
-	    background: rgba(0,0,0,.8);
-	    border-radius: 5px;
-	    bottom: 26px;
-	    color: #fff;
-	    content: attr(title);
-	    left: 20%;
-	    padding: 5px 15px;
-	    position: absolute;
-	    z-index: 98;
-	    width: 220px;
-	}
-	.tooltip:hover:before{
-	    border: solid;
-	    border-color: #333 transparent;
-	    border-width: 6px 6px 0 6px;
-	    bottom: 20px;
-	    content: "";
-	    left: 50%;
-	    position: absolute;
-	    z-index: 99;
-	}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(2);
+}
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -2499,6 +2474,7 @@
 			order: 1;
 			border-radius: 0;
 			width: 40%;
+
 		}
 
 			.spotlight .image img {
@@ -2513,7 +2489,9 @@
 			-ms-order: 2;
 			order: 2;
 			max-width: 48em;
-			width: 60%;
+			width: 35%;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 		.spotlight:nth-child(2n) {
@@ -2569,7 +2547,7 @@
 			}
 
 			.spotlight .content {
-				width: 55%;
+				width: 35%;
 			}
 		}
 
@@ -2629,6 +2607,7 @@
 
 		.wrapper.style1 {
 			background-color: #21b2a6;
+			/*background-image: url("../../images/pic01.jpg") ;*/
 			color: #c7ebe8;
 		}
 

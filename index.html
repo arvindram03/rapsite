@@ -46,11 +46,11 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Ramanananth Properties</h2>
-							<p>Building homes since 1991
-							<p>40 Projects | 100 Happy Families</p>
+							<p>We build your dream</p>
+							<p>20 Years | 40 Projects | 100 Happy Families</p>
 						</div>
 						<ul class="actions">
-								<li><a href="#" class="button special">Brochure</a></li>
+								<li><a href="#five" class="button special scrolly">Say Hello</a></li>
 						</ul>
 						<a href="#two" class="more scrolly">Learn More</a>
 					</section>
@@ -61,8 +61,8 @@
 							<header class="major">
 								<h2>Beautiful independent villas<br />
 								at Madambakkam, Guduvanchery</h2>
-								<p>1200 square foot duplex houses with independent car parking<br />
-								Near Madambakkam flyover</p>
+								<p>1200 square foot duplex houses in a serene locality<br />
+								near Madambakkam flyover</p>
 							</header>
 							<ul class="icons major">
 								<li><span class="icon fa-car major" title="500m from GST"><span class="label">500m</span></span></li>
@@ -75,25 +75,35 @@
 				<!-- Two -->
 					<section id="three" class="wrapper alt style2">
 						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/pic01.jpg" alt=""/></div><div class="content">
+								<h2>Duplex 3BHK Villas</h2>
+								<p>1300 sq. ft. builtup area, <br /> 
+								1200 sq. ft. plot area, <br/>
+								Car parking, <br />
+								Vetrified tiles, <br/>
+								Potable ground water
+								</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div>
+							<div class="content">
+								<h2>Amenities</h2>
+								<p>Bala Vidya Mandir School, Estancia <br/> SRM Hospital, <br/> More Super Market, <br/> Sangeetha Restaurant</p>
 							</div>
 						</section>
 						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+							<div id="googleMap" style="min-width:580px;min-height:380px;"></div>
+							<div class="content">
+								<h2>Location</h2>
+								<p>1, Sri Ramanar Nagar,<br/> AVN Street,<br/> Madambakkam, <br/>Guduvanchery, <br/>Chennai</p>
 							</div>
+							<div class="content">
+								<ul class="actions">
+									<li><a href="brochure.pdf" target="_blank" class="button special icon fa-download">Brochure</a></li>
+								</ul>
+							</div>
+
 						</section>
 					</section>
 
@@ -104,20 +114,20 @@
 								<h2>Why our customers love us</h2>
 							</header>
 							<ul class="features">
-								<li class="icon fa-heart-o">
-									<h3>Arcu accumsan</h3>
+								<li class="icon fa-heart">
+									<h3>Babujee Pandian</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-heart-o">
-									<h3>Ac Augue Eget</h3>
+								<li class="icon fa-heart">
+									<h3>Sivaraman</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-heart-o">
-									<h3>Mus Scelerisque</h3>
+								<li class="icon fa-heart">
+									<h3>Barathi</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-heart-o">
-									<h3>Mauris Imperdiet</h3>
+								<li class="icon fa-heart">
+									<h3>IG</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 							</ul>
@@ -128,14 +138,14 @@
 					<section id="five" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Say Hello</h2>
+								<h2>Let's Build Together</h2>
 							</header>
 							<ul class="features">
 								<li class="icon fa-phone">
 									<h3>Contact</h3>
 									<p>Anantharam K<br/>
 									9789995970<br/>
-									ramanananthproperties@gmail.com</p>
+									<a href="mailto:ramanananthproperties@gmail.com">ramanananthproperties@gmail.com</a></p>
 								</li>
 								<li class="icon fa-briefcase">
 									<h3>Address</h3>
@@ -156,6 +166,28 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="http://maps.googleapis.com/maps/api/js"></script>
+			<script>
+				function initialize() {
+					siteLatLng = new google.maps.LatLng(12.850550, 80.053406)
+				  var mapProp = {
+				  	scrollwheel:false,
+				    center:siteLatLng,
+				    zoom:15,
+				    mapTypeId:google.maps.MapTypeId.ROADMAP
+				  };
+				  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+				  // map.disableScrollWheelZoom();
+				  var marker = new google.maps.Marker({
+				      position: siteLatLng,
+				      map: map,
+				      title: 'Independent Villas'
+  				  });
+				  
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
