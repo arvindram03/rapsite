@@ -59,7 +59,6 @@
 			// Move to end of body.
 				$menu
 					.appendTo($body);
-
 			// Close.
 				$menuClose
 					.on('click touchend', function(event) {
@@ -68,6 +67,7 @@
 						event.stopPropagation();
 
 						$body.removeClass('is-menu-visible');
+
 
 					});
 
